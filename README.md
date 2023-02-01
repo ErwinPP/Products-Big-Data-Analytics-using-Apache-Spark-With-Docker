@@ -73,7 +73,8 @@ For this project there are three csv files one for each product
     
 <br>
     
-- ### Task 4- Load Data to postgres database<br>
+- ### Task 4- Load Data to postgres database Using docker Image<br>
+using Docker Image to set Postgresql DBMS Enviroment to load the data
     1. create a new database
     2. subsequently mount a new folder.
     3. Load your dataframes as 3 different tables in the database.

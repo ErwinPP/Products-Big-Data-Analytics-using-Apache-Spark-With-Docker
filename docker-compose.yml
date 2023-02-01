@@ -1,0 +1,25 @@
+version: "3.9"
+services:
+  spark_project:
+    container_name: spark_setup
+    image: stephanegaiffas/big_data_course:v2
+    ports:
+      - "8888:8888"
+      - "4040:4040"
+    volumes:
+      - "./:/opt/polynote/notebooks/"
+    restart: always
+    environment:
+      - PYSPARK_ALLOW_INSECURE_GATEWAY=1
+
+  pgdatabase:
+    container_name: postgres_db
+    image: postgres:13
+    environment:
+      - POSTGRES_USER=user
+      - POSTGRES_PASSWORD=passward
+      - POSTGRES_DB=products_db
+    volumes:
+      - "./products-warehouse:/var/lib/postgresql/data:rw"
+    ports:
+      - "5432:5432"

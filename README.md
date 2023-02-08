@@ -1,4 +1,4 @@
-# Products-Big-Data-Analytics-With-Apache-Spark using Docker
+# Big-Data-Products-Analytics-With-Apache-Spark using Docker
 
 ## Abstract
 The objective of this project is to analyse various datasets in PySpark about commercial
